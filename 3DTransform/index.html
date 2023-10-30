@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-Transform</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .static{
+             transform: perspective(10px) translateZ(-5px);  
+             /* Andar ki tarf jayega z Axis me  */
+        }
+
+        .translated{
+            transform: perspective(20px) translateZ(-5px);
+        }
+
+        .scaled{
+            margin-left: 600px;
+            transform: rotateZ(45deg);  /*rotation ke case me hume Perspective ki need nahi hoti h, But scaling ke case me aapko Perspective ON karna padega */
+            transform: perspective(350px) scaleZ(3) rotateZ(30deg) rotateX(45deg) rotateY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="static">static</div>
+    <div class="translated">translated</div>
+    <div class="scaled">scaled</div>
+</body>
+</html>

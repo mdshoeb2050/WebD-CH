@@ -1,0 +1,60 @@
+/* p,h1{
+    position: static;
+} 
+ -- NO change at all
+*/                      
+
+.div{
+    border: 2 px solid black;
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+}
+
+.box{
+    margin-top: 20px;
+    border: 1 px solid black;
+    display: inline-block;      /* sare box ek single line me */
+    background-color: aqua;
+    width: 140px;
+    height: 140px;
+}
+
+#box3{
+    position: relative;
+    top: 90px;
+    left: 290px;
+    background-color: pink;
+}
+
+/* #box1{
+    position: relative;
+    top: 50px;
+    left: 40px;
+    background-color: rgb(253, 14, 54);
+} */
+
+#box1{
+    position: fixed;
+    background-color: blue;
+    top: 20px;
+    left: 50px;
+}
+
+#box2{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    background-color: rgb(255, 0, 0);
+   
+}
+.wrapper{
+    height: 1200px;
+    width: 100vw;
+    background-color: yellow;
+}
+
+#box4{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 0, 238);
+}

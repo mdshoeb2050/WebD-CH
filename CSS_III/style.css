@@ -1,0 +1,135 @@
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+}
+.container{
+    height: 400px;
+    border: 2px solid black;
+    display: flex;
+    
+    /* NOTE -: flex direction property -> It will display always perpendicular to main axis*/
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse;   */
+
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+
+        /* flex-wrap: wrap;    */
+        /* Squeze karne par (inspect karke window size reduce karna) boxex neece ki tarf move hona start ho jayengi */
+        
+        /* flex-wrap: wrap-reverse; */
+        /* Squeze karne par (inspect karke window size reduce karna) boxex UPER  ki tarf move hona start ho jayengi */
+
+        /* flex-wrap: nowrap;  */
+        /* nothing will happen  */
+
+    /*flex-flow - shorthand notation of all both above */
+             /* flex-flow: row-wrap; */
+            /* flex-flow: column-wrap;  */
+            /* flex-flow: column; */
+            /* flex-flow: column-reverse; */
+            /* flex-flow: row; */
+            /* flex-flow: row-reverse; */
+
+   /* justify-content - work on main Axis, Horizontal Align  */
+        /* justify-content: flex-start;  */  
+         /*Main Axis ke Left side*/
+
+        /* justify-content: flex-end;   */
+           /*Main Axis ke Right side*/
+
+        /* justify-content: center; */
+        /* justify-content: space-around;   */
+           /* left & right side ko chod kar baki beech me har flex-items ke beech me space rahega */ 
+        /* justify-content:space-evenly; */
+        /* justify-content: space-between; */
+
+  /* align-items - work on Cross Axis . Vertical Alignment  */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: stretch; */
+        /* align-items: baseline; */
+ 
+  /* align-content  - handle  space between multiple rows of flex items  */
+            /* justify-content: center;  */
+            /* align-items: center;          */
+            /* flex-wrap: wrap;  */
+            /* Upar kuch lines likha h so that align content ko acche se samjah ja sake  */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+
+
+  /* Q- How to center a flex box with content ? */
+     /* justify-content: center;  */
+    /* align-items: center;  */
+
+  /* Q- How to give margin between flex items ? */
+   /* gap: 10px; */
+   /* row-gap: 50px; */
+   /* column-gap: 50px; */
+
+
+
+}
+
+.box{
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(241, 255, 48);
+    width: 150px;
+    /* height: 100px; */
+    text-align: center;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif;  */
+    /* font-weight: bold;  */
+
+    /* applying flex-basis */
+    /* flex-basis: 50%; */
+     /* it will occupy half area of window size  - don't forget to include universal selector - box-sizing:border-box;*/
+}
+
+/* Now we  will learn How to re-ordering diffrent items(child items) in a parent container  */
+#box-1{
+    background-color: aqua;
+  
+    /* order: 5;   */
+    /* peeche jayega ye wla item */
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+
+      /* align-self: stretch; */
+}
+#box-2{
+    background-color: blue;
+    /* order: 4; */
+    /* flex-basis: 100px; */
+    /* align-self: stretch; */
+
+    /* flex shorthand */
+    /* flex: 3 5 2 100px;     -> order, grow, shrink, flex-basis (automatic overflow ko handle karega content ka inside box) */
+}
+#box-3{
+    background-color: chartreuse;
+    /* order: 3; */
+    /* flex-shrink: 5; */
+      /* align-self: flex-start; */
+}
+#box-4{
+    background-color: rgb(255, 0, 221);
+    /* order: 2; */
+    /* flex-grow: 4; */
+}
+#box-5{  
+    background-color: rgb(255, 0, 0);
+
+    /* order: 1; */
+    /* align-self: flex-end; */
+    /* align-self: baseline; */
+}
+
+/* Jaisa oredering value doge usi hisab se items ka position change hota jayega - jaisa ki humne mathematics me number line me padha h - 1<2<3<4<5 and so on..... */
+

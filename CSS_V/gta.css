@@ -1,0 +1,68 @@
+.container{
+  height: 900px;
+  border: 2px solid black ;
+  background-color: yellow;
+
+  display: grid;
+
+  /* we have to make 4 rows  */
+  /* grid-template-rows: 30px 180px 400px 30px ; */
+
+    /* we have to make only one column   */
+  /* grid-template-columns: 500px; */
+
+  /* grid area using for naming of elements */
+  /* grid-template-areas: 
+   "hd"
+   "side"
+   "content"
+   "ft"
+  ; */
+
+  /* Example - 2  */
+  /* grid-template-columns: 200px 400px; */
+  /* grid-template-rows: 300px 500px 300px; */
+
+   /* grid-template-areas:  */
+  /* " hd hd "   */
+  /* 1st row me total 2 columns occupy karega */
+  /* " side main"   */
+  /* 2nd row me  1 column sidebar & 1 column main  occupy karega */
+  /* " ft ft "     */
+  /* 3rd row me total 2  columns ft  occupy karega */
+  /* ;   */
+
+
+  grid-template-areas: 
+   /*divide 1st row & 3 columns into 6 equal parts  */
+  "hd hd hd hd hd hd"  
+  /*divide 2nd row & 3 columns into 6 equal parts -> 1 parts for sidebar & 5 parts for main   */
+  "side main main main main main"
+  /* ye extra rows hai jo automatically squeze hoke neeche chali jayegi  */
+ "ft ft ft ft ft ft ";
+
+  grid-template-columns: 300px 300px 300px; 
+  grid-template-rows: 250px 600px; 
+}
+
+.box{
+    border: 1px solid rgb(8, 7, 7);
+    background-color: aqua;
+
+    margin: 2px;
+}
+
+#header{
+    grid-area: hd;
+}
+
+#sidebar{
+    grid-area: side;
+}
+
+#content{
+    grid-area: main;
+}
+#footer{
+    grid-area:ft;
+}

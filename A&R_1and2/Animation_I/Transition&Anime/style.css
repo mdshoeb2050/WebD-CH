@@ -1,0 +1,104 @@
+.container{
+    border: 2px solid black;
+    background-color: aqua;
+    width: 500px;
+    height: 1800px;
+    /* display: flex; */
+}
+
+.box{
+    border: 2px solid rgb(239, 12, 12);
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin:25px;
+
+    /* transition property -- very fast transition */
+    /* transition: 0.1s;   */
+
+    /* Bad practice */
+    /* transition-property: all;   Bad practice   */
+
+}
+
+/* .box:hover{
+    background-color: blue;
+} */
+
+#box3{
+    background-color: red;
+    /* transition: height 2s linear 1s; */
+    /* transition: height 2s ease 1s; */
+    /* transition: width 2s ease-in 1s; */
+    /* transition: width 2s ease-out 1s; */
+    /* transition: width 2s ease-in-out 1s; */
+
+    /* transition: transform 1s ease-in 1s; */
+    /* transition: transform 1s ease-in ; */
+
+    /* agar rotate & bgcolor dono par trnasition lagana hua to */
+    /* transition: all 5s ease 1s;  delay 1second duration 5 sec*/ 
+
+    transition: all 1s ease;
+}
+#box3:hover{
+   
+    /* height: 600px; */
+    /* transform: rotate(65deg); */
+    /* transform: rotate(180deg); */
+
+    background-color: rgb(6, 5, 6);
+    transform: rotate(360deg);
+ 
+    border-radius: 50%;
+    
+
+}
+
+#box1{
+    
+    transition: background-color 1s ease 1s;
+}
+#box1:hover{
+    background-color: rgb(255, 0, 0);
+
+}
+
+#box2{
+    text-align: center;
+    /* border-radius: 30%; */
+    /* transition: transform 5s ease-in; */
+    /* transition: transform 2s ease; */
+
+    /* bydefault tansform na de t bhi ho ajata h kam - bydefault -> all */
+    transition:  2s ease;  
+    /* transition: transform 2s ease-out; */
+    /* transition: transform 2s linear; */
+    /* transition: transform 2s ease-in-out 5s; */
+
+    /* How to create your own trnsition fun - go to inspect & styles me jaakr curve ko acc to yo mold kar lo phir us value ko copy kar lo*/
+    
+    /* transition-property:transform ;
+    transition-duration: 2s ;
+    transition-timing-function: cubic-bezier(1,-0.38, 0, 1.31);
+    transition-delay: 1s; */
+
+    /* using shorthand method we can do in only 1 line  */
+    /* transition: transform 2s  cubic-bezier(1,-0.38, 0, 1.31) 1s; */
+    
+
+}
+
+#box2:hover{
+
+    /* transform: translateX(400px); */
+
+    /* rotate & translate 2 kam eksath kaise karoge */
+
+     /* transform: translateX(400px) rotate(360deg); */
+
+     /* 3 kam 1 sath */
+    
+     transform: scale(2) translateX(400px) rotate(360deg);
+
+}

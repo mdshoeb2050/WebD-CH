@@ -1,0 +1,24 @@
+.div2{
+    margin-top: 20px;
+    border: 1px solid red;
+    min-width: 300px;
+    
+}
+
+.div1{
+    margin-top: 20px;
+    border: 1px solid black;
+    max-width: 200px;
+    height: 200px;
+ 
+    overflow-y: scroll;
+    overflow-y: scroll;
+    overflow: scroll;
+    
+}
+
+.positionProp{
+    border: 2px solid red;
+    
+}
+

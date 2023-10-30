@@ -1,0 +1,52 @@
+.box{
+    border: 1px solid red;
+    width: 400px;
+    height: 400px;
+    /* background-image: linear-gradient(red,blue);
+    background-image: linear-gradient(to left,red,blue); 
+    background-image: linear-gradient(to right,red,blue);
+
+    background-image: linear-gradient(to bottom right,red,blue);
+    background-image: linear-gradient(to bottom left,red,blue);
+
+    background-image: linear-gradient(to top right,red,blue);
+    background-image: linear-gradient(to top left,red,blue);
+    background-image: linear-gradient(to top left,red,blue,yellow);
+    background-image: linear-gradient(30deg,red,blue,yellow, white);
+    */
+
+    /*Creating Tiranga */
+    /*
+    background-image: linear-gradient(rgb(255, 145, 0),white,green);
+    background-image: linear-gradient(60 deg, rgb(255, 145, 0),white,green);
+    */
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0),rgba(0,0,255,1));
+}
+
+  .mydiv{
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(red, yellow);
+    background-image: radial-gradient(red, yellow, blue);
+    background-image: radial-gradient(circle, red , yellow, white );
+
+    background-image: radial-gradient(yellow 5%,orange 10%,red 50%  );
+
+  }
+
+  .conic-gradient{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    background-image: conic-gradient(red,yellow, green);
+    background-image: conic-gradient(red 45 deg,yellow 90 deg, green 210 deg);
+
+    /* pie chart of colors */
+
+    background-image: conic-gradient(red,yellow, green, blue,magenta);
+    border-radius: 50%;
+
+  }
